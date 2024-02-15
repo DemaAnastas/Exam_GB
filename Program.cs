@@ -1,14 +1,15 @@
 ﻿string[] startArray = { "Hello", "my", "teacher", "!", ":-)" };
 PrintArray(startArray);
-string[] resultArray = CalculateArray(startArray);
+string [] resultArray = CalculateArray(startArray);
 PrintArray(resultArray);
+
 
 void PrintArray(string[] arr)
 {
     string str = "[" + String.Join(", ", arr) + "]";
     Console.WriteLine(str);
 }
-string[] CalculateArray(str[] arr)
+string[] CalculateArray(string[] arr)
 {
     string[] resultArray = new string[0];
     for (int i = 0; i < arr.Length;i++)
@@ -19,4 +20,5 @@ string[] CalculateArray(str[] arr)
             resultArray [resultArray.Length - 1] = arr[i];
         }
     }
+    return resultArray;
 }
